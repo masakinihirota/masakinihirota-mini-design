@@ -1,3 +1,17 @@
+todo
+
+ユーザーの
+auth.usersをpublic.root-accounts
+にコピー
+トリガーを使う
+
+動作確認
+
+
+
+
+
+
 # Webアプリの規模
 
 Webアプリを分類すると

@@ -1,0 +1,155 @@
+src
+├── .storybook
+│   ├── main.ts
+│   └── preview.ts
+├── app
+│   ├── (dashboard)
+│   │   ├── dashboard
+│   │   │   ├── activity
+│   │   │   │   └── page.tsx
+│   │   │   ├── general
+│   │   │   │   └── page.tsx
+│   │   │   ├── security
+│   │   │   │   └── page.tsx
+│   │   │   ├── invite-team.tsx
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx
+│   │   │   └── settings.tsx
+│   │   ├── manga
+│   │   │   └── register
+│   │   │       └── page.tsx
+│   │   ├── pricing
+│   │   │   ├── page.tsx
+│   │   │   └── submit-button.tsx
+│   │   ├── _page.tsx
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── terminal.tsx
+│   ├── (login)
+│   │   ├── login-github
+│   │   │   └── page.tsx
+│   │   ├── logout-github
+│   │   ├── sign-in
+│   │   │   └── page.tsx
+│   │   ├── sign-up
+│   │   │   └── page.tsx
+│   │   ├── actions.ts
+│   │   └── login.tsx
+│   ├── api
+│   │   ├── manga
+│   │   │   └── register
+│   │   │       └── route.ts
+│   │   └── stripe
+│   │       ├── checkout
+│   │       │   └── route.ts
+│   │       └── webhook
+│   │           └── route.ts
+│   ├── _layout.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── not-found.tsx
+├── components
+│   ├── auth
+│   │   └── social-login-buttons.tsx
+│   ├── ui
+│   │   ├── avatar.tsx
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   ├── dropdown-menu.tsx
+│   │   ├── input.tsx
+│   │   ├── label.tsx
+│   │   └── radio-group.tsx
+│   ├── mode-toggle.tsx
+│   └── theme-provider.tsx
+├── db
+│   ├── schema
+│   │   ├── manga_works.ts
+│   │   ├── originalSchema.ts
+│   │   ├── roots.ts
+│   │   └── user_profiles.ts
+│   ├── sql
+│   │   ├── seeds
+│   │   │   ├── auth.users.sql
+│   │   │   └── public.users.sql
+│   │   ├── supabaseSystem
+│   │   │   └── auth.users.sql
+│   │   └── trigger
+│   │       └── add_root.sql
+│   ├── drizzle.ts
+│   ├── queries.ts
+│   ├── seed.ts
+│   └── setup.ts
+├── lib
+│   ├── auth
+│   │   ├── index.tsx
+│   │   ├── middleware.ts
+│   │   └── session.ts
+│   ├── payments
+│   │   ├── actions.ts
+│   │   └── stripe.ts
+│   ├── supabase.ts
+│   └── utils.ts
+├── stories
+│   ├── assets
+│   │   ├── accessibility.png
+│   │   ├── accessibility.svg
+│   │   ├── addon-library.png
+│   │   ├── assets.png
+│   │   ├── avif-test-image.avif
+│   │   ├── context.png
+│   │   ├── discord.svg
+│   │   ├── docs.png
+│   │   ├── figma-plugin.png
+│   │   ├── github.svg
+│   │   ├── share.png
+│   │   ├── styling.png
+│   │   ├── testing.png
+│   │   ├── theming.png
+│   │   ├── tutorials.svg
+│   │   └── youtube.svg
+│   ├── button.css
+│   ├── Button.stories.ts
+│   ├── Button.tsx
+│   ├── Configure.mdx
+│   ├── header.css
+│   ├── Header.stories.ts
+│   ├── Header.tsx
+│   ├── page.css
+│   ├── Page.stories.ts
+│   └── Page.tsx
+├── supabase
+│   ├── .branches
+│   │   └── _current_branch
+│   ├── .temp
+│   │   └── cli-latest
+│   ├── migrations
+│   │   ├── meta
+│   │   │   ├── _journal.json
+│   │   │   └── 0000_snapshot.json
+│   │   └── 0000_soft_the_anarchist.sql
+│   ├── .gitignore
+│   └── config.toml
+├── types
+│   └── types_db.ts
+├── .env
+├── .env.example
+├── .env.local
+├── .env.local.example
+├── .gitignore
+├── biome.json
+├── components.json
+├── drizzle.config.ts
+├── gen.js
+├── lefthook.yml
+├── LICENSE
+├── middleware.ts
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── README ja 2.md
+├── README ja.md
+├── README.md
+└── tsconfig.json

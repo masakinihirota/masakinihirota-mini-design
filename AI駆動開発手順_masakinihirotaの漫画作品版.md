@@ -322,9 +322,6 @@ pnpm db:setup
 masakinihirotaの漫画作品の登録と
 ユーザープロフィールを作る
 
-評価なし
-タグやリストは無し
-
 # 採用技術
 ## フロントエンド
 *   **Next.js** : Reactベースのフレームワーク。
@@ -355,6 +352,24 @@ masakinihirotaの漫画作品の登録と
 ## その他
 *   **Vercel** : ホスティングプラットフォーム。
 *   **GitHub** : ソースコード管理。
+
+# 開発環境
+Windows 10
+Visual Studio Code
+PowerShell
+Git
+Docker
+Node.js
+
+SupabaseはローカルのDockerを立ち上げSupabaseのコンテナを利用します。
+ローカルのSupabaseで開発して、運用時にサーバーのSupabaseに切り替えます。
+
+APIはHonoを使用します。
+
+ルーティングは
+Next.jsのApp routerを使用します。
+
+
 
 # 実装ルール
 
@@ -438,6 +453,23 @@ Supabaseのpublicにルートアカウントテーブルを作って管理しま
 2. Clineの設定を行います。
     - Clineのチャット欄の下にあるAuto-approveを開き、それぞれのオプションを設定します。
 
+### Read files and directories
+ファイルを読むことを許可します。
+
+### Edit files
+これ許可しないとファイルを生成せず、作ってとお願いしたことがClineの中だけで作ったことになります。
+
+### Execute safe commands
+危険なコマンド以外実行することを許可します。
+
+### Use the browser
+ブラウザを使うことを許可します。
+
+### Use MCP servers
+簡単に言うと、外部(ネット上)の情報にClineがアクセスするための許可です。
+
+
+
 ## 設計書と実装手順の準備
 
 0. Gitでリポジトリを作成し、設計書と実装手順をMarkdownファイルで用意します。
@@ -475,6 +507,8 @@ Actモードに入る前に、gitでバージョン管理をしておけばい�
 3. テスト後、必要に応じて修正を加えます。
 4. 修正後、再度テストを実施し、最終チェックを行います。
 
+現実のコードとCline上の認識が一致しているかを考えてもらう。
+「*****はまだ出来ていません。もういちどソースコードを見直してみてください。」
 
 ### Tips
 
